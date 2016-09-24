@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">  
+  
+<html>  
+  
+<head>  
+  <meta charset="UTF-8"/>
+  
+<title>Check card no</title>  
+  
+<!--<script type='text/javascript' src='js/qq.js'></script>-->  
+<script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+  
+</head>  
+  
+<body>  
+  
+请输入身份证号码：  
+  
+<input name='card_no' type='text' id='card_no' value='' />  
+  
+<input type='button' name='submit' value='click me' onclick='javascript:checkCard();' />  
+  
+  <script type="text/javascript">
+//	var aa= new verification();IdCardValidate
+//function checkCard(){
+//	var card_no=document.getElementById("card_no");
+//	
+//	if(IdCardValidate(card_no.value)){
+//		console.log("success!")
+//	}else{
+//		console.log("erro!")
+//	}
+//}
+
+function checkCard(){
+	var card_no=document.getElementById("card_no");
+	console.log(maleOrFemalByIdCard(card_no.value));
+	if(maleOrFemalByIdCard(card_no.value)){
+		console.log("success!")
+	}else{
+		console.log("erro!")
+	}
+}
+
+
+
+  </script>
+</body>  
+  
+</html>  
+ 
+
